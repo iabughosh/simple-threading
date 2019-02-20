@@ -15,7 +15,7 @@ public class Simulator {
 		
 		for(int i = 0; i < 10; i++) {
 			
-			int randomAmount = (new Random().nextInt(30)) + 1;
+			int randomAmount = (new Random().nextInt(10)) + 1;
 			threadsExecutor.execute(new UserTransaction(userAccount, randomAmount));
 		}
 		
